@@ -1,0 +1,136 @@
+:root{
+    --red-color:#fe6965;
+    --blue-color:#3d4061;
+    --black-color:#24242c;
+}
+body{
+    font-family: sans-serif;
+}
+.navbar{
+    background-color: var(--red-color);
+}
+.navbar .navbar-brand{
+    font-size: 36px;
+    font-weight: bold;
+    color: #eee;
+}
+.navbar .nav-link{
+    color: #eee;
+}
+.navbar .btn{
+    width: 48%;
+    background-color: transparent;
+    border: none;
+    border: 1px solid #eee;
+    transition: all 0.5s ease-in-out;
+}
+.navbar .btn:hover{
+    background-color: #eeeeee52;
+}
+
+.sec1{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fe6965;
+    color: #eee;
+}
+.sec1 .head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+}
+.sec1 .head .h1{
+    font-size: 60px;
+}
+.sec1 .head .btn{
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+}
+.sec1 .head .btn.active{
+    background-color:#eee;
+    color:var(--red-color);
+}
+.sec1 .head .btn:hover{
+    background-color: #fff;
+    color:var(--red-color);
+}
+.sec2 .p-conn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 55px;
+}
+.sec2 .r{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.sec2 .p-con .h3{
+    color: var(--blue-color);
+}
+.sec3{
+    background-color: var(--blue-color);
+    height: 344px;
+    padding: 10px;
+    border-radius: 0px 100px 0px;
+    margin-bottom: 100px;
+}
+.sec3 .pra{
+    position: relative;
+    bottom: 74px;
+}
+.sec3 .tex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 270px;
+}
+.sec3 .tex .h1{
+    font-size: 32px;
+    color: #eee;
+}
+.sec4 .pp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.sec4 .h3{
+    color:var(--blue-color);
+}
+.footer{
+    background-color: var(--black-color);
+    color: #eee;
+    padding-top: 28px;
+    border-radius: 0px 82px 0px 0px;
+}
+.footer .col-lg-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.footer ul{
+    list-style: none;
+    padding: 0px;
+}
+@media (max-width:767px){
+    .sec2 .p-con{
+        text-align: center;
+    }
+    .sec3{
+        height: 690px;
+    }
+    .sec3 .pra{
+        bottom: 63px;
+    }
+    .sec3 .tex{
+        position: relative;
+    bottom: 110px;
+    }
+}
